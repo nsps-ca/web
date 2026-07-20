@@ -5,19 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>North Shore Photographic Society</title>
-    <link href="theme/css/bootstrap.min.css" rel="stylesheet">
-    <link href="theme/css/site.css" rel="stylesheet">
-    <link rel="icon" href="theme/images/logo-210x210.jpg" sizes="192x192" />
-    <link rel="apple-touch-icon" href="theme/images/logo-210x210.jpg" />
-    <script src="theme/js/bootstrap.bundle.min.js"></script>
-    <script src="theme/js/site.js"></script>
+    <link href="/theme/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/theme/css/site.css" rel="stylesheet">
+    <link rel="icon" href="/theme/images/logo-210x210.jpg" sizes="192x192" />
+    <link rel="apple-touch-icon" href="/theme/images/logo-210x210.jpg" />
+    <script src="/theme/js/bootstrap.bundle.min.js"></script>
+    <script src="/theme/js/site.js"></script>
     <meta name="msapplication-TileImage" content="/static/images/logo.jpg" />
 </head>
 
 <body class="bg-light">
     <header class="bg-body">
         <div class="container">
-            <img src="theme/images/cropped-NSPS_logo_banner_750x150px.png" alt="Logo" class="img-fluid">
+            <img src="/theme/images/cropped-NSPS_logo_banner_750x150px.png" alt="Logo" class="img-fluid">
         </div>
         <nav class="navbar navbar-expand-lg bg-light border-bottom">
             <div class="container">
@@ -27,7 +27,7 @@
                 <div class="collapse navbar-collapse bg-emphasis" id="navbarNav">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="/about">About</a>
+                            <a class="nav-link" href="about">About</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="membershipNav" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Membership
@@ -70,6 +70,7 @@
             </div>
         </nav>
         <main class="bg-body border-bottom pb-4">
+
             {% block main %}{% endblock %}
 
         </main>
