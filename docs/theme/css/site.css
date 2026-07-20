@@ -4,12 +4,12 @@
 
 @font-face {
     font-family: Garamond;
-    src: url(CormorantGaramond-VariableFont_wght.ttf) format("truetype");
+    src: url(/theme/fonts/CormorantGaramond-VariableFont_wght.ttf) format("truetype");
 }
 
 @font-face {
     font-family: DroidSans;
-    src: url(DroidSans.ttf) format("truetype");
+    src: url(/theme/fonts/DroidSans.ttf) format("truetype");
 }
 
 h1 {
