@@ -1,0 +1,43 @@
+.nav-link {
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Garamond;
+    src: url(CormorantGaramond-VariableFont_wght.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: DroidSans;
+    src: url(DroidSans.ttf) format("truetype");
+}
+
+h1 {
+    font-family: Garamond, serif;
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+h3 {
+    font-family: Garamond;
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+h5 {
+    font-family: Garamond;
+    font-size: 1.8rem;
+    font-weight: 200;
+}
+
+.nsps-hero {
+    width: 100%;
+    height: 400px;
+    display: block;
+    object-fit: cover;
+}
+
+.card-img-top {
+    object-fit: cover;
+    height: 200px
+}
