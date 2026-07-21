@@ -24,7 +24,7 @@ jobs:
         run: pip install -r requirements.txt
       
       - name: Update the calendar
-        run: python build/photos.py
+        run: python build/compress.py
 
       - name: Commit changes
         uses: EndBug/add-and-commit@v10
