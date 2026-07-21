@@ -1,0 +1,33 @@
+name: Update the website with any photos from the drive
+
+on:
+  workflow_dispatch:
+  schedule:
+  - cron: '55 12 * * *'
+  # Vancouver time, this is 5:55am, which should be before most events start.
+
+jobs:
+  update:
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v7
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.14'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      
+      - name: Update the calendar
+        run: python build/photos.py
+
+      - name: Commit changes
+        uses: EndBug/add-and-commit@v10
+        with:
+          message: 'Add any automatically compressed images'
+          add: 'static/compressed/*.*'
