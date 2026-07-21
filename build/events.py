@@ -6,7 +6,7 @@ import sys
 import argparse
 
 calendar_url = "https://nsps.ca/?post_type=tribe_events&ical=1&eventDisplay=list"
-root = os.path.abspath("content/event")
+root = os.path.abspath("../content/event")
 assert os.path.exists(root), f"The directory {root} doesn't exist."
 
 def get_calendar():
