@@ -7,7 +7,7 @@ on:
   # Vancouver time, this is 5:55am, which should be before most events start.
 
 jobs:
-  notify:
+  update:
 
     runs-on: ubuntu-latest
 
