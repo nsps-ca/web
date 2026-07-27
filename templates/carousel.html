@@ -1,0 +1,19 @@
+    <div class="carousel-indicators">
+        {% for photo in CAROUSEL %}
+            <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="{{ loop.index - 1 }}" aria-label="Slide {{ loop.index }}" {% if loop.index == 1 %}class="active" aria-current="true"{% endif %}></button>
+        {% endfor %}
+    </div>
+    <div class="carousel-inner">
+        {% for photo in CAROUSEL %}
+        <div class="carousel-item {% if loop.index == 1 %}active{% endif %}">
+            <img class="nsps-hero" src="/theme/compressed/{{ photo.0 }}" alt="{{ photo.1 }}">
+            <div class="carousel-caption d-none d-md-block">
+                <a class="badge text-bg-secondary link-underline link-underline-opacity-0" href="/theme/originals/{{ photo.0 }}">
+                    <h6><i>{{ photo.1 }}</i> &bull; {{ photo.2 }}</h6>
+                    Full version
+                </a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>

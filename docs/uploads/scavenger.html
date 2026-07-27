@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head data-bs-theme="light">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>North Shore Photographic Society</title>
+    <link href="/theme/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/theme/css/site.css" rel="stylesheet">
+    <link rel="icon" href="/theme/images/logo-210x210.jpg" sizes="192x192" />
+    <link rel="apple-touch-icon" href="/theme/images/logo-210x210.jpg" />
+    <script src="/theme/js/bootstrap.bundle.min.js"></script>
+    <script src="/theme/js/site.js"></script>
+    <meta name="msapplication-TileImage" content="/static/images/logo.jpg" />
+</head>
+
+<body class="bg-light">
+    <header class="bg-body">
+        <div class="container">
+            <img src="/theme/images/cropped-NSPS_logo_banner_750x150px.png" alt="Logo" class="img-fluid">
+        </div>
+        <nav class="navbar navbar-expand-lg bg-light border-bottom">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="collapse navbar-collapse bg-emphasis" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">🏠</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="historyNav" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="historyNav">
+                                <a class="dropdown-item" href="/history.html">History</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="membershipNav" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Membership
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="membershipNav">
+                                <a class="dropdown-item" href="/membership/types">Overview</a>
+                                <a class="dropdown-item" href="/membership/benefits">Fees</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="challengeNav" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">North Shore Challenge
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="challengeNav">
+                                <a class="dropdown-item" href="#">North Shore Challenge 2027</a>
+                                <a class="dropdown-item" href="#">2026 Gallery</a>
+                                <a class="dropdown-item" href="#">2025 Gallery</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="evaluationNav" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Image Evaluation
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="evaluationNav">
+                                <a class="dropdown-item" href="#">Evaluation System</a>
+                                <a class="dropdown-item" href="#">Star level Criteria</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="uploadsNav" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Uploads
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="uploadsNav">
+                                        <a class="dropdown-item" href="/uploads/scavenger.html">Scavenger&nbsp;Hunt</a>
+                                        <a class="dropdown-item" href="/uploads/projection.html">Projection&nbsp;Night</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">FAQ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <main class="bg-body border-bottom pb-4">
+
+<div class="container pt-4">
+    <div class="row">
+        <div class="col-8">
+            <h1>Scavenger&nbsp;Hunt</h1>
+            <p>Please use this form to upload one or two images for star level rating and scoring on Projection&nbsp;Night.</p>
+
+            <form>
+                <div class="row mb-2">
+                    <h3>About you</h3>
+                    <div class="col-6">
+                        <label class="form-label">First name (required)</label>
+                        <input type="text" class="form-control" required="true">
+                        <label class="form-label">Last name (required)</label>
+                        <input type="text" class="form-control" required="true">
+                        <label class="form-label">Email address (required)</label>
+                        <input type="text" class="form-control" required="true">
+                        <label class="form-label">Current star rating (required)</label>
+                        <select class="form-control" required="true">
+                            
+                    <option value=""></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                        <div class="form-text">What is <a href="https://nsps.ca/image-evaluation-2/star-level-criteria-2/">star rating</a>? Photographers start at level 1.</div>
+                    </div>
+                </div>
+                <div class="row mb-2">
+                    <h3>Your pictures</h3>
+                        <div class="upload-container mb-4">
+                            <div class="form-group">
+                                <input type="file" accept="image/jpeg" class="dnd-select d-none">
+                                <input type="text" name="width" class="dnd-width d-none">
+                                <input type="text" name="height" class="dnd-height d-none">
+                                <input type="text" name="type" class="dnd-type d-none">
+                                <input type="text" name="size" class="dnd-size d-none">
+
+                            </div>
+
+                            <div class="form-group">
+                                <div class="card  dnd-target" data-filetype="previous">
+                                    <div class="dnd-wrapper">
+                                        <img class="card-img-top" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22286%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20286%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_19f330f097d%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_19f330f097d%22%3E%3Crect%20width%3D%22286%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2298.41666793823242%22%20y%3D%2295.7%22%3E📸%20Preview%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E">
+                                        <div class="card-body">
+                                            <p>Drag and drop <b>image 1</b> here, or <a href="#" class="dnd-select-link">click to select a file</a>.</p>
+                                            <ul class="list-unstyled card-subtitle mb-2 text-muted">
+                                                <li class="size-status">ℹ️ Size: less than 2MB</li>
+                                                <li class="type-status">ℹ️ Type: JPEG</li>
+                                                <li class="dimensions-status">ℹ️ Max 1400 pixels</li>
+                                            </ul>
+                                            <h5>Details</h5>
+                                            <div class="input-group">
+                                                <span class="input-group-text">Title</span>
+                                                <input type="text" placeholder="Max 400 characters" class="form-control" maxlength="400">
+                                            </div>
+                                            <div class="form-check pt-2">
+                                                <input class="form-check-input" type="checkbox" value="" required="true">
+                                                <label class="form-check-label">
+                                                    <b>No AI as per <a href="https://capacanada.ca/updated-ai-requirements-on-capa-competitions/">CAPA policy</a> (required)</b>
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="">
+                                                <label class="form-check-label">
+                                                    Use in NSPS Competitions
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="">
+                                                <label class="form-check-label">
+                                                    Use on NSPS website
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="">
+                                                <label class="form-check-label">
+                                                    Use on NSPS social media posts
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="upload-container mb-4">
+                            <div class="form-group">
+                                <input type="file" accept="image/jpeg" class="dnd-select d-none">
+                                <input type="text" name="width" class="dnd-width d-none">
+                                <input type="text" name="height" class="dnd-height d-none">
+                                <input type="text" name="type" class="dnd-type d-none">
+                                <input type="text" name="size" class="dnd-size d-none">
+
+                            </div>
+
+                            <div class="form-group">
+                                <div class="card  dnd-target" data-filetype="previous">
+                                    <div class="dnd-wrapper">
+                                        <img class="card-img-top" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22286%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20286%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_19f330f097d%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_19f330f097d%22%3E%3Crect%20width%3D%22286%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2298.41666793823242%22%20y%3D%2295.7%22%3E📸%20Preview%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E">
+                                        <div class="card-body">
+                                            <p>Drag and drop <b>image 2</b> here, or <a href="#" class="dnd-select-link">click to select a file</a>.</p>
+                                            <ul class="list-unstyled card-subtitle mb-2 text-muted">
+                                                <li class="size-status">ℹ️ Size: less than 2MB</li>
+                                                <li class="type-status">ℹ️ Type: JPEG</li>
+                                                <li class="dimensions-status">ℹ️ Max 1400 pixels</li>
+                                            </ul>
+                                            <h5>Details</h5>
+                                            <div class="input-group">
+                                                <span class="input-group-text">Title</span>
+                                                <input type="text" placeholder="Max 400 characters" class="form-control" maxlength="400">
+                                            </div>
+                                            <div class="form-check pt-2">
+                                                <input class="form-check-input" type="checkbox" value="" required="true">
+                                                <label class="form-check-label">
+                                                    <b>No AI as per <a href="https://capacanada.ca/updated-ai-requirements-on-capa-competitions/">CAPA policy</a> (required)</b>
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="">
+                                                <label class="form-check-label">
+                                                    Use in NSPS Competitions
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="">
+                                                <label class="form-check-label">
+                                                    Use on NSPS website
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="">
+                                                <label class="form-check-label">
+                                                    Use on NSPS social media posts
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="upload-container mb-4">
+                            <div class="form-group">
+                                <input type="file" accept="image/jpeg" class="dnd-select d-none">
+                                <input type="text" name="width" class="dnd-width d-none">
+                                <input type="text" name="height" class="dnd-height d-none">
+                                <input type="text" name="type" class="dnd-type d-none">
+                                <input type="text" name="size" class="dnd-size d-none">
+
+                            </div>
+
+                            <div class="form-group">
+                                <div class="card  dnd-target" data-filetype="previous">
+                                    <div class="dnd-wrapper">
+                                        <img class="card-img-top" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22286%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20286%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_19f330f097d%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_19f330f097d%22%3E%3Crect%20width%3D%22286%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2298.41666793823242%22%20y%3D%2295.7%22%3E📸%20Preview%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E">
+                                        <div class="card-body">
+                                            <p>Drag and drop <b>image 3</b> here, or <a href="#" class="dnd-select-link">click to select a file</a>.</p>
+                                            <ul class="list-unstyled card-subtitle mb-2 text-muted">
+                                                <li class="size-status">ℹ️ Size: less than 2MB</li>
+                                                <li class="type-status">ℹ️ Type: JPEG</li>
+                                                <li class="dimensions-status">ℹ️ Max 1400 pixels</li>
+                                            </ul>
+                                            <h5>Details</h5>
+                                            <div class="input-group">
+                                                <span class="input-group-text">Title</span>
+                                                <input type="text" placeholder="Max 400 characters" class="form-control" maxlength="400">
+                                            </div>
+                                            <div class="form-check pt-2">
+                                                <input class="form-check-input" type="checkbox" value="" required="true">
+                                                <label class="form-check-label">
+                                                    <b>No AI as per <a href="https://capacanada.ca/updated-ai-requirements-on-capa-competitions/">CAPA policy</a> (required)</b>
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="">
+                                                <label class="form-check-label">
+                                                    Use in NSPS Competitions
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="">
+                                                <label class="form-check-label">
+                                                    Use on NSPS website
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="">
+                                                <label class="form-check-label">
+                                                    Use on NSPS social media posts
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="upload-container mb-4">
+                            <div class="form-group">
+                                <input type="file" accept="image/jpeg" class="dnd-select d-none">
+                                <input type="text" name="width" class="dnd-width d-none">
+                                <input type="text" name="height" class="dnd-height d-none">
+                                <input type="text" name="type" class="dnd-type d-none">
+                                <input type="text" name="size" class="dnd-size d-none">
+
+                            </div>
+
+                            <div class="form-group">
+                                <div class="card  dnd-target" data-filetype="previous">
+                                    <div class="dnd-wrapper">
+                                        <img class="card-img-top" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22286%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20286%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_19f330f097d%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_19f330f097d%22%3E%3Crect%20width%3D%22286%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2298.41666793823242%22%20y%3D%2295.7%22%3E📸%20Preview%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E">
+                                        <div class="card-body">
+                                            <p>Drag and drop <b>image 4</b> here, or <a href="#" class="dnd-select-link">click to select a file</a>.</p>
+                                            <ul class="list-unstyled card-subtitle mb-2 text-muted">
+                                                <li class="size-status">ℹ️ Size: less than 2MB</li>
+                                                <li class="type-status">ℹ️ Type: JPEG</li>
+                                                <li class="dimensions-status">ℹ️ Max 1400 pixels</li>
+                                            </ul>
+                                            <h5>Details</h5>
+                                            <div class="input-group">
+                                                <span class="input-group-text">Title</span>
+                                                <input type="text" placeholder="Max 400 characters" class="form-control" maxlength="400">
+                                            </div>
+                                            <div class="form-check pt-2">
+                                                <input class="form-check-input" type="checkbox" value="" required="true">
+                                                <label class="form-check-label">
+                                                    <b>No AI as per <a href="https://capacanada.ca/updated-ai-requirements-on-capa-competitions/">CAPA policy</a> (required)</b>
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="">
+                                                <label class="form-check-label">
+                                                    Use in NSPS Competitions
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="">
+                                                <label class="form-check-label">
+                                                    Use on NSPS website
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="">
+                                                <label class="form-check-label">
+                                                    Use on NSPS social media posts
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="upload-container mb-4">
+                            <div class="form-group">
+                                <input type="file" accept="image/jpeg" class="dnd-select d-none">
+                                <input type="text" name="width" class="dnd-width d-none">
+                                <input type="text" name="height" class="dnd-height d-none">
+                                <input type="text" name="type" class="dnd-type d-none">
+                                <input type="text" name="size" class="dnd-size d-none">
+
+                            </div>
+
+                            <div class="form-group">
+                                <div class="card  dnd-target" data-filetype="previous">
+                                    <div class="dnd-wrapper">
+                                        <img class="card-img-top" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22286%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20286%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_19f330f097d%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_19f330f097d%22%3E%3Crect%20width%3D%22286%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2298.41666793823242%22%20y%3D%2295.7%22%3E📸%20Preview%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E">
+                                        <div class="card-body">
+                                            <p>Drag and drop <b>image 5</b> here, or <a href="#" class="dnd-select-link">click to select a file</a>.</p>
+                                            <ul class="list-unstyled card-subtitle mb-2 text-muted">
+                                                <li class="size-status">ℹ️ Size: less than 2MB</li>
+                                                <li class="type-status">ℹ️ Type: JPEG</li>
+                                                <li class="dimensions-status">ℹ️ Max 1400 pixels</li>
+                                            </ul>
+                                            <h5>Details</h5>
+                                            <div class="input-group">
+                                                <span class="input-group-text">Title</span>
+                                                <input type="text" placeholder="Max 400 characters" class="form-control" maxlength="400">
+                                            </div>
+                                            <div class="form-check pt-2">
+                                                <input class="form-check-input" type="checkbox" value="" required="true">
+                                                <label class="form-check-label">
+                                                    <b>No AI as per <a href="https://capacanada.ca/updated-ai-requirements-on-capa-competitions/">CAPA policy</a> (required)</b>
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="">
+                                                <label class="form-check-label">
+                                                    Use in NSPS Competitions
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="">
+                                                <label class="form-check-label">
+                                                    Use on NSPS website
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="">
+                                                <label class="form-check-label">
+                                                    Use on NSPS social media posts
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="upload-container mb-4">
+                            <div class="form-group">
+                                <input type="file" accept="image/jpeg" class="dnd-select d-none">
+                                <input type="text" name="width" class="dnd-width d-none">
+                                <input type="text" name="height" class="dnd-height d-none">
+                                <input type="text" name="type" class="dnd-type d-none">
+                                <input type="text" name="size" class="dnd-size d-none">
+
+                            </div>
+
+                            <div class="form-group">
+                                <div class="card  dnd-target" data-filetype="previous">
+                                    <div class="dnd-wrapper">
+                                        <img class="card-img-top" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22286%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20286%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_19f330f097d%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_19f330f097d%22%3E%3Crect%20width%3D%22286%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2298.41666793823242%22%20y%3D%2295.7%22%3E📸%20Preview%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E">
+                                        <div class="card-body">
+                                            <p>Drag and drop <b>image 6</b> here, or <a href="#" class="dnd-select-link">click to select a file</a>.</p>
+                                            <ul class="list-unstyled card-subtitle mb-2 text-muted">
+                                                <li class="size-status">ℹ️ Size: less than 2MB</li>
+                                                <li class="type-status">ℹ️ Type: JPEG</li>
+                                                <li class="dimensions-status">ℹ️ Max 1400 pixels</li>
+                                            </ul>
+                                            <h5>Details</h5>
+                                            <div class="input-group">
+                                                <span class="input-group-text">Title</span>
+                                                <input type="text" placeholder="Max 400 characters" class="form-control" maxlength="400">
+                                            </div>
+                                            <div class="form-check pt-2">
+                                                <input class="form-check-input" type="checkbox" value="" required="true">
+                                                <label class="form-check-label">
+                                                    <b>No AI as per <a href="https://capacanada.ca/updated-ai-requirements-on-capa-competitions/">CAPA policy</a> (required)</b>
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="">
+                                                <label class="form-check-label">
+                                                    Use in NSPS Competitions
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="">
+                                                <label class="form-check-label">
+                                                    Use on NSPS website
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="">
+                                                <label class="form-check-label">
+                                                    Use on NSPS social media posts
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="upload-container mb-4">
+                            <div class="form-group">
+                                <input type="file" accept="image/jpeg" class="dnd-select d-none">
+                                <input type="text" name="width" class="dnd-width d-none">
+                                <input type="text" name="height" class="dnd-height d-none">
+                                <input type="text" name="type" class="dnd-type d-none">
+                                <input type="text" name="size" class="dnd-size d-none">
+
+                            </div>
+
+                            <div class="form-group">
+                                <div class="card  dnd-target" data-filetype="previous">
+                                    <div class="dnd-wrapper">
+                                        <img class="card-img-top" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22286%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20286%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_19f330f097d%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_19f330f097d%22%3E%3Crect%20width%3D%22286%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2298.41666793823242%22%20y%3D%2295.7%22%3E📸%20Preview%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E">
+                                        <div class="card-body">
+                                            <p>Drag and drop <b>image 7</b> here, or <a href="#" class="dnd-select-link">click to select a file</a>.</p>
+                                            <ul class="list-unstyled card-subtitle mb-2 text-muted">
+                                                <li class="size-status">ℹ️ Size: less than 2MB</li>
+                                                <li class="type-status">ℹ️ Type: JPEG</li>
+                                                <li class="dimensions-status">ℹ️ Max 1400 pixels</li>
+                                            </ul>
+                                            <h5>Details</h5>
+                                            <div class="input-group">
+                                                <span class="input-group-text">Title</span>
+                                                <input type="text" placeholder="Max 400 characters" class="form-control" maxlength="400">
+                                            </div>
+                                            <div class="form-check pt-2">
+                                                <input class="form-check-input" type="checkbox" value="" required="true">
+                                                <label class="form-check-label">
+                                                    <b>No AI as per <a href="https://capacanada.ca/updated-ai-requirements-on-capa-competitions/">CAPA policy</a> (required)</b>
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="">
+                                                <label class="form-check-label">
+                                                    Use in NSPS Competitions
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="">
+                                                <label class="form-check-label">
+                                                    Use on NSPS website
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="">
+                                                <label class="form-check-label">
+                                                    Use on NSPS social media posts
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="upload-container mb-4">
+                            <div class="form-group">
+                                <input type="file" accept="image/jpeg" class="dnd-select d-none">
+                                <input type="text" name="width" class="dnd-width d-none">
+                                <input type="text" name="height" class="dnd-height d-none">
+                                <input type="text" name="type" class="dnd-type d-none">
+                                <input type="text" name="size" class="dnd-size d-none">
+
+                            </div>
+
+                            <div class="form-group">
+                                <div class="card  dnd-target" data-filetype="previous">
+                                    <div class="dnd-wrapper">
+                                        <img class="card-img-top" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22286%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20286%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_19f330f097d%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_19f330f097d%22%3E%3Crect%20width%3D%22286%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2298.41666793823242%22%20y%3D%2295.7%22%3E📸%20Preview%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E">
+                                        <div class="card-body">
+                                            <p>Drag and drop <b>image 8</b> here, or <a href="#" class="dnd-select-link">click to select a file</a>.</p>
+                                            <ul class="list-unstyled card-subtitle mb-2 text-muted">
+                                                <li class="size-status">ℹ️ Size: less than 2MB</li>
+                                                <li class="type-status">ℹ️ Type: JPEG</li>
+                                                <li class="dimensions-status">ℹ️ Max 1400 pixels</li>
+                                            </ul>
+                                            <h5>Details</h5>
+                                            <div class="input-group">
+                                                <span class="input-group-text">Title</span>
+                                                <input type="text" placeholder="Max 400 characters" class="form-control" maxlength="400">
+                                            </div>
+                                            <div class="form-check pt-2">
+                                                <input class="form-check-input" type="checkbox" value="" required="true">
+                                                <label class="form-check-label">
+                                                    <b>No AI as per <a href="https://capacanada.ca/updated-ai-requirements-on-capa-competitions/">CAPA policy</a> (required)</b>
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="">
+                                                <label class="form-check-label">
+                                                    Use in NSPS Competitions
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="">
+                                                <label class="form-check-label">
+                                                    Use on NSPS website
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="">
+                                                <label class="form-check-label">
+                                                    Use on NSPS social media posts
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <p>Something recaptcha something maybe goes here.</p>
+                        <button type="submit" class="btn btn-primary">Upload Images</button>
+                    </div>
+                </div>
+        </div>
+    <div>
+</div> 
+        </main>
+        <footer class="bg-light pt-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <h5>Links</h5>
+                        <ul class="list-unstyled">
+                                <li><a href="https://www.martingodwyn.com/" title="Landscape &amp; Nature Photographer">Amor Lucis Photography</a></li>
+                                <li><a href="https://www.beauphoto.com/" title="Supplying photographers in the lower mainland and across Canada since 1982.">Beau Photo Supplies</a></li>
+                                <li><a href="https://www.capacanada.ca/" title="Canadian Association for Photographic Art">CAPA</a></li>
+                                <li><a href="https://capacanada.ca/updated-ai-requirements-on-capa-competitions/" title="The Canadian Association for Photographic Art updated Artificial Intelligence (AI) Requirements on CAPA Competitions">CAPA: Updated AI Requirements</a></li>
+                                <li><a href="https://grinkecreative.com/" title="Len Grinke's Photography Workshops">Len Grinke Photography</a></li>
+                                <li><a href="https://www.londondrugs.com/" title="">London Drugs</a></li>
+                                <li><a href="https://www.neilbennettphoto.ca/" title="">Neil Bennett Photography</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6">
+                        <h5>Contact</h5>
+                        <ul class="list-unstyled">
+                                <li><a href="https://www.martingodwyn.com/" title="Landscape &amp; Nature Photographer">Amor Lucis Photography</a></li>
+                                <li><a href="https://www.beauphoto.com/" title="Supplying photographers in the lower mainland and across Canada since 1982.">Beau Photo Supplies</a></li>
+                                <li><a href="https://www.capacanada.ca/" title="Canadian Association for Photographic Art">CAPA</a></li>
+                                <li><a href="https://capacanada.ca/updated-ai-requirements-on-capa-competitions/" title="The Canadian Association for Photographic Art updated Artificial Intelligence (AI) Requirements on CAPA Competitions">CAPA: Updated AI Requirements</a></li>
+                                <li><a href="https://grinkecreative.com/" title="Len Grinke's Photography Workshops">Len Grinke Photography</a></li>
+                                <li><a href="https://www.londondrugs.com/" title="">London Drugs</a></li>
+                                <li><a href="https://www.neilbennettphoto.ca/" title="">Neil Bennett Photography</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <p class="text-muted"><small>Copyright © All Rights Reserved 1984-2026. Made with ❤️ by the NSPS.</small></p>
+                </div>
+            </div>
+        </footer>
+        </div>
+
+
+</body>
+
+</html>

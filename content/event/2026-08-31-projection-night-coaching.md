@@ -1,6 +1,6 @@
 Title: Projection Night: Coaching
-Date: 2026-08-31 19-30
-URL: /events/2026-08-31-projection-night-coaching
+Date: 2026-08-31 19:30
+Slug: 2026-08-31-projection-night-coaching
 Template: event
 UID: 28155-1788204600-1788204600@nsps.ca
 

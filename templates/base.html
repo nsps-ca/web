@@ -27,7 +27,14 @@
                 <div class="collapse navbar-collapse bg-emphasis" id="navbarNav">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="about">About</a>
+                            <a class="nav-link" href="/">🏠</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="historyNav" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="historyNav">
+                                <a class="dropdown-item" href="{{ SITEURL }}/history.html">History</a>
+                            </div>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="membershipNav" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Membership
@@ -58,8 +65,11 @@
                             <a class="nav-link dropdown-toggle" href="#" id="uploadsNav" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Uploads
                             </a>
                             <div class="dropdown-menu" aria-labelledby="uploadsNav">
-                                <a class="dropdown-item" href="#">Scavenger Hunt</a>
-                                <a class="dropdown-item" href="/uploads/upload.html">Projection Night</a>
+                                {% for article in articles %}
+                                    {% if article.template == "upload" %}
+                                        <a class="dropdown-item" href="{{ SITEURL }}/uploads/{{ article.slug }}.html">{{ article.title }}</a>
+                                    {% endif %}
+                                {% endfor %}
                             </div>
                         </li>
                         <li class="nav-item">
@@ -80,22 +90,17 @@
                     <div class="col-6">
                         <h5>Links</h5>
                         <ul class="list-unstyled">
-                            <li><a href="https://www.martingodwyn.com/" title="Landscape &amp; Nature Photographer">Amor Lucis Photography</a></li>
-                            <li><a href="https://www.beauphoto.com/" title="Supplying photographers in the lower mainland and across Canada since 1982.">Beau Photo Supplies</a></li>
-                            <li><a href="https://www.capacanada.ca/" title="Canadian Association for Photographic Art" target="_blank">CAPA</a></li>
-                            <li><a href="https://capacanada.ca/updated-ai-requirements-on-capa-competitions/" title="The Canadian Association for Photographic Art updated Artificial Intelligence (AI) Requirements on CAPA Competitions" target="_blank">CAPA: Updated AI Requirements</a></li>
-                            <li><a href="https://grinkecreative.com/" title="Len Grinke’s Photography Workshops" target="_blank">Len Grinke Photography</a></li>
-                            <li><a href="https://www.londondrugs.com/" target="_blank">London Drugs</a></li>
-                            <li><a href="https://www.neilbennettphoto.ca/">Neil Bennett Photography</a></li>
+                            {% for link in LINKS %}
+                                <li><a href="{{ link[0] }}" title="{{ link[1] }}">{{ link[2] }}</a></li>
+                            {% endfor %}
                         </ul>
                     </div>
                     <div class="col-6">
                         <h5>Contact</h5>
                         <ul class="list-unstyled">
-                            <li><a href="mailto:webmaster@nsps.ca">Email</a></li>
-                            <li><a href="https://northshorepho-kj37343.slack.com/">Slack</a></li>
-                            <li><a href="https://www.facebook.com/North-https://bsky.app/profile/northshoreps.bsky.sociaShore-Photographic-Society-185057961533431/">Facebook</a></li>
-                            <li><a href="https://bsky.app/profile/northshoreps.bsky.social">Bluesky</a></li>
+                            {% for link in LINKS %}
+                                <li><a href="{{ link[0] }}" title="{{ link[1] }}">{{ link[2] }}</a></li>
+                            {% endfor %}
                         </ul>
                     </div>
                 </div>

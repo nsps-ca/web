@@ -1,0 +1,10 @@
+
+{% for article in articles if article.template == "event" %}
+    {% if article.date > NOW %}
+        <a href="/event/{{ article.slug }}.html" class="card m-4 link-underline link-underline-opacity-0 card-event">
+            <h5>{{ article.title }}</h5>
+            <p><span data-bs-toggle="tooltip" data-bs-title="All times are Vancouver, Canada time">🗓 {{ article.locale_date }}</p>
+            <p><span class="badge text-bg-primary link-underline link-underline-opacity-0">More info</span></p>
+        </a>
+    {% endif %}
+{% endfor %}

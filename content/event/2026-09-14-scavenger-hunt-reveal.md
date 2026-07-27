@@ -1,6 +1,6 @@
 Title: Scavenger Hunt Reveal
-Date: 2026-09-14 19-30
-URL: /events/2026-09-14-scavenger-hunt-reveal
+Date: 2026-09-14 19:30
+Slug: 2026-09-14-scavenger-hunt-reveal
 Template: event
 UID: 28153-1789414200-1789414200@nsps.ca
 
