@@ -24,36 +24,35 @@ function formatBytes(bytes, decimals = 2) {
     return `${parseFloat((bytes / Math.pow(k, i)).toFixed(dm))} ${sizes[i]}`
 }
 
-const resetImg = document.querySelector(".card-img-top").src;
+function getUploadContainer(current) {
+    for (let x = 0; x < 10; x++) {
+        current = current.parentElement;
+        if (current.classList.contains("upload-container")) {
+            upload_container = current;
+            break;
+        }
+    }
+    return upload_container;
+}
+
+function getClosest(className, upload_container) {
+    return upload_container.getElementsByClassName(className)[0];
+}
 
 function handleFile(file, element) {
-
-    let upload_container = null;
-
-    function getClosest(className) {
-        let current = element;
-        if (!upload_container) {
-            for (let x = 0; x < 10; x++) {
-                current = current.parentElement;
-                if (current.classList.contains("upload-container")) {
-                    upload_container = current;
-                    break;
-                }
-            }
-        }
-        return upload_container.getElementsByClassName(className)[0];
-    }
+    let resetImg = document.querySelector(".card-img-top").src;
+    let upload_container = getUploadContainer(element);
 
     const elements = {
-        "card-img-top": getClosest("card-img-top"),
-        "dnd-height": getClosest("dnd-height"),
-        "dnd-width": getClosest("dnd-width"),
-        "dnd-size": getClosest("dnd-size"),
-        "dnd-type": getClosest("dnd-type"),
-        "size-status": getClosest("size-status"),
-        "type-status": getClosest("type-status"),
-        "dimensions-status": getClosest("dimensions-status"),
-        "dnd-target": getClosest("dnd-target"),
+        "card-img-top": getClosest("card-img-top", upload_container),
+        "dnd-height": getClosest("dnd-height", upload_container),
+        "dnd-width": getClosest("dnd-width", upload_container),
+        "dnd-size": getClosest("dnd-size", upload_container),
+        "dnd-type": getClosest("dnd-type", upload_container),
+        "size-status": getClosest("size-status", upload_container),
+        "type-status": getClosest("type-status", upload_container),
+        "dimensions-status": getClosest("dimensions-status", upload_container),
+        "dnd-target": getClosest("dnd-target", upload_container),
     }
 
     function resetForm() {
@@ -132,14 +131,14 @@ window.addEventListener("load", () => {
     dndLinks.forEach((link) => {
         link.addEventListener("click", (event) => {
             event.preventDefault();
-            event.target.closest("form").getElementsByClassName("dnd-select")[0].click()
+            let upload_container = getUploadContainer(event.target);
+            getClosest("dnd-select", upload_container).click();
         });
     });
 
     const dndSelect = document.querySelectorAll(".dnd-select");
 
     dndSelect.forEach((input) => {
-
         input.addEventListener("change", (event) => {
             event.preventDefault();
             const file = event.target.files[0];
