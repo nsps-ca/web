@@ -2,13 +2,9 @@
 <div class="mb-4 carousel slide" data-bs-ride="carousel" id="hero-carousel">
         {% include "carousel.html" %}
 </div>
-<div class="container">
-    <div class="row border-bottom">
-        <div class="col-4">
-            {% include "events.html" %}
-        </div>
-
-        <div class="col-8 mt-4">
+<div class="container-lg">
+    <div class="row">
+        <div class="col-md-8 mt-4">
             <h5>Scavenger Hunt</h5>
             <p>From June 8 to September 11, NSPS members are on a photographic <a href="https://nsps.ca/scavenger-hunt-2026/">Scavenger Hunt</a></p>
 
@@ -25,10 +21,9 @@
             <div class="alert alert-warning">NSPS encourages all photographers to ensure their presence, and lighting under their control, does not disturb or interfere with wildlife being photographed.</div>
 
         </div>
-
-
-    </div>
-    <div class="row mt-2">
+        <div class="col-md-4 border-start">
+            {% include "events.html" %}
+        </div>
 
     </div>
 </div>
