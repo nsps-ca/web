@@ -1,4 +1,4 @@
-Title: Scavenger Hunt Reveal
+Title: Scavenger Hunt Photo Reveal
 Date: 2026-09-14 19:30
 Slug: 2026-09-14-scavenger-hunt-reveal
 Template: event

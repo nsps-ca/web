@@ -1,12 +1,12 @@
 Title: Projection Night: Coaching
-Date: 2026-08-31 19:15
-Slug: 2026-08-31-projection-night-coaching
+Date: 2026-10-05 19:30
+Slug: 2026-10-05-projection-night-coaching
 Template: event
-UID: 28155-1788203700-1788203700@nsps.ca
+UID: 28226-1791228600-1791228600@nsps.ca
 
 This meeting is held on Zoom. NSPS members and pre-registered guests receive the link and passcode by Noon on the meeting day. 
-7:00 - 7:15 pm (PT): Members 'meet and greet'
-7:15 pm: Meeting starts 
+7:00 - 7:30 pm (PT): Members 'meet and greet'
+7:30 pm: Meeting starts 
 Coach: To be announced 
 Description: Members' digital images are projected one at a time. A Coach provides feedback on each image. 
 Images submitted for Star Level rating and scoring are announced by title. The photographer's name is announced when an image achieves a Gold or Certificate of Merit rating from the Coach. 
