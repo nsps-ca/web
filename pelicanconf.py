@@ -83,3 +83,6 @@ CAROUSEL = [
     ["AND_9632.jpeg", "Osprey", "Andy McKay"],
     ["20260709_A3_Barn-Wood_Emogene-Emogene_CMPYes_NSPYes_SOCYes_No-AIYes.jpg", "Barn Wood", "Emogene"]
 ]
+
+# Alters events to hide past events and limit the number of future events displayed.
+PLUGINS = ["events"]
