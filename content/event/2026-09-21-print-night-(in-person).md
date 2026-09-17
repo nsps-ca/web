@@ -4,11 +4,11 @@ Slug: 2026-09-21-print-night-(in-person)
 Template: event
 UID: 28222-1790019000-1790019000@nsps.ca
 
-Location: to be announced 
+Location: Delbrook Community Centre, Arts and Crafts Room 
 7:00 - 7:30 pm (Pacific): Members & guests 'meet and greet'
 7:30 pm: Meeting starts 
 NOTE: NSPS in-person gatherings are scent free. Masks are optional and members can bring their own personal non-alcoholic beverages (i.e. water, juice or pop). 
-Coach: to be announced 
+Coach: Mary Jensen 
 Description: Member prints are displayed one at a time. A Coach provides feedback on each print. 
 Prints submitted for Star Level rating and scoring are announced by title, and the photographer's name is announced if the print achieves a Gold of Certificate of Merit rating from the Coach. 
 Prints submitted for Feedback Only are announced by title and not the photographer. 

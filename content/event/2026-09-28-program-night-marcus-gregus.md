@@ -1,16 +1,17 @@
-Title: Program Night: Marcus Gregus
+Title: SGM and Program Night: Martin Gregus
 Date: 2026-09-28 19:30
 Slug: 2026-09-28-program-night-marcus-gregus
 Template: event
 UID: 28224-1790623800-1790623800@nsps.ca
 
 This meeting is held on Zoom. NSPS members and pre-registered guests receive the link and passcode to join the meeting. 
-7:00 - 7:30 pm (PT): Members and guests 'meet and greet'
-7:30 pm: Meeting starts 
+7:00 - 7:15 pm (PT): Members and guests 'meet and greet'
+7:15 pm: Special General Meeting starts 
 -------------------- 
-Presenter: Marcus Gregus 
+Presenter: Martin Gregus 
 Program Title: Pole to Pole 
-Description: to be announced 
+About the Presenter: Martin Gregus is an internationally awarded wildlife photographer and cinematographer.  Now based in Canada, Martin has worked extensively throughout the Americas and the South Pacific. 
+Martin’s work with polar bears, particularly the expedition “33 Days Among the Bears,” gained international attention following its feature in National Geographic magazine in 2022. 
 -------------------- 
 
 
